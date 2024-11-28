@@ -48,11 +48,11 @@ h3 {
 .navbar {
     position: fixed;
     top: 15px;
-    left: 49%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: var(--navbar-bg-color);
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     z-index: 1000;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -145,7 +145,7 @@ h3 {
     margin: 10px;
 }
 iframe{
-    width: 100%;
+   width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
@@ -213,12 +213,14 @@ iframe{
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .navbar {
         position: fixed;
         top: 0;
         right: 0;
         width: 50%;
+        left: 49%;
+        border-radius: 15px;
         background-color: var(--navbar-bg-color);
         transform: translateY(-100%);
         transition: transform 0.3s ease;
