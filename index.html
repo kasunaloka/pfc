@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore gaming content, tech reviews, podcasts, and join a vibrant community.">
+    <meta name="keywords" content="gaming, tech reviews, podcasts, community, vlogging, gaming universe">
     <title>Kasutta.YT</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./fvi.png">
     <link rel="stylesheet" href="styles.css">
@@ -11,18 +13,26 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#content"><i class="fas fa-gamepad"></i>Gaming</a></li>
-            <li><a href="#tech"><i class="fas fa-laptop"></i>Tech</a></li>
-            <li><a href="#podcast"><i class="fas fa-microphone"></i>Podcast</a></li>
-            <li><a href="#connect"><i class="fas fa-users"></i>Community</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="#home" aria-label="Go to Home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#content" aria-label="View Gaming Content"><i class="fas fa-gamepad"></i>Gaming</a></li>
+            <li><a href="#tech" aria-label="Explore Tech Reviews"><i class="fas fa-laptop"></i>Tech</a></li>
+            <li><a href="#podcast" aria-label="Listen to Podcasts"><i class="fas fa-microphone"></i>Podcast</a></li>
+            <li><a href="#connect" aria-label="Join the Community"><i class="fas fa-users"></i>Community</a></li>
+            <li><a href="#contact" aria-label="Contact Me"><i class="fas fa-envelope"></i>Contact</a></li>
         </ul>
     </nav>
 
+    <div class="mobile-menu-toggle">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20" rx="10" fill="#ffffff" />
+            <rect y="30" width="100" height="20" rx="10" fill="#ffffff" />
+            <rect y="60" width="100" height="20" rx="10" fill="#ffffff" />
+        </svg>
+    </div>
+
     <section id="home" class="hero">
         <div class="container">
-            <img src="./ee9f77736b56eebdba42cba5d3656c7f.jpg" alt="Profile Picture" class="profile-img">
+            <img src="./ee9f77736b56eebdba42cba5d3656c7f.jpg" alt="Profile Picture" class="profile-img" loading="lazy">
             <h1>Welcome to My Gaming Universe</h1>
             <p>Gaming Content Creator | Tech Reviewer | Podcaster | Vlogger</p>
             <div class="social-links">
@@ -171,34 +181,6 @@
         </div>
     </section>
 
-    <script>
-        // Add smooth scrolling to all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add active class to navbar items on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            document.querySelectorAll('section').forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.navbar a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
