@@ -48,11 +48,11 @@ h3 {
 .navbar {
     position: fixed;
     top: 15px;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     background-color: var(--navbar-bg-color);
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     z-index: 1000;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
