@@ -422,6 +422,7 @@ footer {
     }
 
     h1 {
+        
         font-size: 2.5em;
     }
 
@@ -445,6 +446,7 @@ footer {
     } */
 
     h1 {
+        padding-top: 400px;
         font-size: 2em;
     }
 
