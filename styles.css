@@ -13,8 +13,8 @@
     --text-color: #ffffff;
     --accent-color: #ff3535;
     --hover-accent: #ff3838;
-    --card-bg-color: rgba(255, 255, 255, 0.1);
-    --navbar-bg-color: rgba(31, 30, 30, 0.8);
+    --card-bg-color: rgba(255, 104, 104, 0.1);
+    --navbar-bg-color: rgba(31, 30, 30, 0.658);
     --navbar-background: rgba(0, 0, 0, 0.24);
     --navbar-hover: #ff4444;
     --navbar-mobile-background: #121212;
@@ -51,7 +51,6 @@ body {
     left: 0;
 
     background: linear-gradient(
-      
         #24110000,
         #191919
     ), 
