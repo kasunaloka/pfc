@@ -330,6 +330,9 @@ iframe{
      border-radius: 10px;
      margin-bottom: 15px;
  }
+.dis_widget{
+    height: 500px;
+}
 /* Call to Action Buttons */
 .cta-button {
     display: inline-block;
